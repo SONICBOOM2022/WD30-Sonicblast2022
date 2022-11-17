@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+.container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    justify-content: center;
+    height: 400px;
+    /* align-items - affects only the spacing of the contents. */
+    align-items: center;
+    /* align-content - affects the spacing and alignment of the elements. */
+    align-content: center;
+}
+.container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin-top: 100px;
+    height: 200px;
+    /* (justify-content) main axis - vertical; cross axis - horizontal */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.box {
+    width: 200px;
+    font-size: 32px;
+    padding: 20px;
+}
+.box1 {
+    /* order-(are property of flex item) are specified on flex items 
+    default is 0*/
+    background-color: red;
+    order: 6;
+}
+.box2 {
+    background-color: orange;
+}
+.box3 {
+    background-color: yellow;
+}
+.box4 {
+    background-color: green;
+}
+.box5 {
+    background-color: blue;
+}
+.box6 {
+    background-color: indigo;
+}
+

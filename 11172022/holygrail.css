@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header, footer {
+    height: 100px;
+    padding: 10px;
+    background-color: red;
+}
+main {
+    display: flex;
+    height: 500px;
+}
+nav {
+    background-color: orange;  
+    width: 20%;
+    padding: 10px; 
+}
+article {
+    background-color: yellow;  
+    width: 60%;
+    padding: 10px; 
+}
+aside {
+    background-color: green;  
+    width: 20%;
+    padding: 10px; 
+}

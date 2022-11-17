@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            background-color: aqua;
+            height: 70px;
+            border: 1px solid yellowgreen;
+        }
+        nav {
+            background-color: gainsboro;
+            height: 70px;
+            border: 1px solid black;
+        }
+        article {
+            background-color: orange;
+            width: 70%;
+            float: left;
+            height: 800px;
+            border: 1px solid black;
+        }
+        aside {
+            background-color: aqua;
+            width: 30%;
+            float: left;
+            height: 800px;
+            border: 1px solid black;
+        }
+        footer {
+            background-color: blueviolet;
+            height: 100px;
+            clear: both;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header style="height: 200px;">
+            <h1>Semantic HTML</h1>
+            <a href="#" style="float: right;">Home</a>
+            <a href="#" style="float: right;">About Us</a>
+        
+    </header>
+
+        <main>
+        <article>
+            <h2>Title of my blog</h2>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet modi error voluptatibus perspiciatis libero, aliquid, esse totam quod ratione itaque asperiores tempora hic adipisci enim? Ipsa dolorem inventore nisi eligendi.</p>
+            </section>
+            <section>
+                <figure>
+                    <img src="./2.jpg" alt="chicks">
+                    <figcaption>She's gorgeous.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <!-- <video src="./file_example_MP4_480_1_5MG.mp4"></video> -->
+                <video controls autoplay muted loop>
+                    <source src="./file_example_MP4_480_1_5MG.mp4"/>
+                </video>
+            </section>
+            <section>
+                <audio controls>
+                    <source src="./file_example_MP3_1MG.mp3"/>
+                </audio>
+            </section>
+        </article>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut? Quidem voluptates exercitationem et dolorum? Incidunt temporibus excepturi corrupti inventore, vitae, ipsa nostrum perferendis ab velit consectetur quis assumenda officia!</p>
+        </aside>
+
+
+    </main>
+
+    <footer>
+        <p>Email me at budoy@gmail.com</p>
+        <p>Copyright 2022</p>
+    </footer>
+
+
+</body>
+</html>

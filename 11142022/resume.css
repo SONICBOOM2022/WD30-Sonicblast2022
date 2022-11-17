@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-image: url(../11142022/b.jpg);
+    font-size: 14px;
+    line-height: 20px;
+}
+.container {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 10px;
+
+}
+.container .resume-left {
+    width: 35%;
+    background: whitesmoke;
+}
+.container .resume-left .resume-img {
+    width: 100%;
+}
+.container .resume-left .resume-img img {
+    width: 90%;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 13px;
+}
+.container .resume-title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+
+}
+.container .resume-left .resume-info {
+    color: black;
+}
+.container .resume-left .resume-bottom {
+    padding: 20px 30px;
+}
+.container .resume-item {
+    padding: 20px 0;
+    
+    border-bottom: 1px solid red;
+}
+.container .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+.container .resume-namerole .name {
+    font: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+.container .resume-left .resume-namerole .role  {
+    color: black;
+}
+.container .resume-left .resume-contact .resume-info:last-child {
+    margin-top: 10px;
+}
+.container .resume-left .resume-contact .resume-subtitle {
+    color: black;
+    margin-bottom: 2px;
+}
+.container .resume-left .resume-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.container .resume-left .resume-skills .skills-list .skills-bar p {
+    position: relative;
+    width: 125px;
+    height: 20px;
+    background: black;
+}
+.container .resume-left .resume-skills .skills-list .skills-bar p span {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background: black;
+    width: 100%;
+    hyphens: 100%;
+}
+.container .resume-right {
+    width: 65%;
+    padding: 20px 40px;
+}
+.container .resume-right .resume-namerole .name {
+    color: black;
+    font-size: 32px;
+}
+.container .resume-right .resume-namerole .role {
+    font-size: 14px;
+    text-transform: uppercase;    
+}
+.container .resume-right .resume-item .resume-title {
+    color: black;
+}
+.container .resume-right .resume-data {
+    display: flex;
+}
+.container .resume-right .resume-data .year {
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+.container .resume-right .resume-data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+.container .resume-right .resume-data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.container .resume-right .resume-data .year:after{
+	content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: black;
+}
+.container .resume-right .resume-data:last-child .year:after{
+	display: none;
+}

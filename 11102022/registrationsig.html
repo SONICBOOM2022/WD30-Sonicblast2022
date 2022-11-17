@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image:
+linear-gradient(90deg, rgba(117, 19, 93, 0.73), rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg')">
+    
+     <table 
+            style="background-color:#4d6575"
+            border="1px solid gray"
+            cellpadding="10" 
+            cellspacing="0"
+            align="center"
+            justify-content: center">
+        
+            <form>
+            <hr width="32%"><h1 align="center">REGISTRATION FORM</h1>
+                <p align="center"><i>Please fill in the details to create an account with us.</i></p><hr width="32%">
+                
+                <tr>
+                    <td>
+                        <label for="First Name"; style="width: 100px; display: inline-block;"><b>First Name:</b></label>
+                            <input 
+                            style="border: 1px solid black; border-radius: 3px;"
+                                type="text" 
+                                placeholder="Enter Name" 
+                                name="First Name"
+                                size="25">
+                    </td>
+                </tr> 
+            <br />               
+                 
+                <tr>
+                    <td>
+                        <label for="Middle Name"; style="width: 100px; display: inline-block;"><b>Middle Name:</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="middlename" 
+                                placeholder="Enter middlename" name="Middle Name"
+                                size="25"
+            > 
+                    </td>   
+                 </tr>               
+            <br />    
+                <tr>
+                    <td>
+                        <label for="Last Name"; style="width: 100px; display: inline-block;"><b>Last Name:</b></label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="lastName" 
+                                placeholder="Enter LastName" 
+                                name="Last Name"
+                                size="25"
+            >
+                    </td> 
+                </tr>               
+            <br />
+                <tr>
+                    <td>       
+                        <label for="address"><strong>Complete Address:</strong></label>
+            <br />
+                            <textarea
+                                name="address"
+                                id="feedback"
+                                cols="75"
+                                rows="4"
+                                width="90"
+                                placeholder="street, brgy/subdv, town/city, province, zipcode"
+                            ></textarea>
+            <br />
+                        
+                <tr>
+                    <td>         
+                        Enter your gender:
+                        <label for="male">Male</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="radio" 
+                                name="gender" 
+                                id=""
+                                value="male"
+            />
+    
+                        <label for="female">Female</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="radio" 
+                                name="gender" 
+                                id="female"
+                                value="female"
+            />
+            <br />
+                <tr>
+                    <td>         
+                        <label for="dropdown">Career Path Field:</label>
+                            <select 
+                                name="dropdown" 
+                                id="dropdown"
+                                size="0.5"
+            >
+            
+                            <option
+                                selected
+                                disabled
+            >
+            <br />
+                        Please select
+                             <option value="frontEnd">Front End  Developer</option>
+                             <option value="backEnd">Back End Developer</option>
+                             <option value="Full-Stack">Full-Stack Developer</option>
+                             </select>
+            <br /> <br />
+            <tr>
+                <td>        
+                        Technical Skills: 
+                        <label for="html">HTML</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="checkbox"
+                                name="progLanguage"
+                                id="javascript"
+                                value="JavaScript"  
+            />
+    
+                        <label for="css">CSS</label>
+                        <input 
+                                type="checkbox" 
+                                name="progLanguage" 
+                                id="php"
+                                value="PHP"
+            />
+    
+                        <label for="javascript">Javascript</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="checkbox" 
+                                name="progLanguage" 
+                                id="js"
+                                value="Javascript"
+                
+            />
+                        <label for="mysql">MySQL</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="checkbox"
+                                name="progLanguage"
+                                id="mySQL"
+                                value="MySQL"  
+            />  
+                    
+                        <label for="laravel">Laravel</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="checkbox" 
+                                name="progLanguage" 
+                                id="laravel"
+                                value="laravel"
+            />
+                    
+                        <label for="reactjs">React JS</label>
+                            <input style="border: 1px solid black; border-radius: 3px;"
+                                type="checkbox" 
+                                name="progLanguage" 
+                                id="reactjs"
+                                value="reactjs"
+            />
+            <br /><br />
+    
+            <tr>
+                <td>
+                    <p><i>By creating an account you agree to our <a href="#">Terms & Conditions</a></i></p>
+                    <label for="terms"></label>
+                        <input 
+                                type="checkbox"
+                                name="yes" 
+                                id="terms&condi"
+                                value="Terms & Conditions">
+            <br /><br />
+                
+                        <button ondblclick="myalert()                   
+                        
+                                "type="submit"                             class="registerbtn"><strong>Submit</strong></button>
+
+                        <script>
+                            function 
+                                myalert() {alert
+                                    ("Welcome to KODEGO.Ph\n " +
+                                      "We don’t just teach code, we produce top talent.")}
+                        </script>
+            <br/>
+                </td>   
+            </tr>   
+        </form>
+    </table>
+
+</body>
+</html>
+
+
+

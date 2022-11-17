@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-image: url(../assignment/b.jpg);
+    font-size: 14px;
+    line-height: 20px;
+}
+.container {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 10px;
+
+}
+.container .resume-left {
+    width: 35%;
+    background: whitesmoke;
+}
+.container .resume-left .resume-img {
+    width: 100%;
+}
+.container .resume-left .resume-img img {
+    width: 90%;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 13px;
+}
+.container .resume-title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+
+}
+.container .resume-left .resume-info {
+    color: black;
+}
+.container .resume-left .resume-bottom {
+    padding: 20px 30px;
+}
+.container .resume-item {
+    padding: 20px 0;
+    
+    border-bottom: 1px solid red;
+}
+.container .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+.container .resume-namerole .name {
+    font: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+.container .resume-left .resume-namerole .role  {
+    color: black;
+}
+.container .resume-left .resume-contact .resume-info:last-child {
+    margin-top: 10px;
+}
+.container .resume-left .resume-contact .resume-subtitle {
+    color: black;
+    margin-bottom: 2px;
+}
+.container .resume-left .resume-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.container .resume-left .resume-skills .skills-list .skills-bar p {
+    position: relative;
+    width: 125px;
+    height: 20px;
+    background: black;
+}
+.container .resume-left .resume-skills .skills-list .skills-bar p span {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background: black;
+    width: 100%;
+    hyphens: 100%;
+}
+.container .resume-right {
+    width: 65%;
+    padding: 20px 40px;
+}
+.container .resume-right .resume-namerole .name {
+    color: black;
+    font-size: 32px;
+}
+.container .resume-right .resume-namerole .role {
+    font-size: 14px;
+    text-transform: uppercase;    
+}
+.container .resume-right .resume-item .resume-title {
+    color: black;
+}
+.container .resume-right .resume-data {
+    display: flex;
+}
+.container .resume-right .resume-data .year {
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+.container .resume-right .resume-data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+.container .resume-right .resume-data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.container .resume-right .resume-data .year:after{
+	content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: black;
+}
+.container .resume-right .resume-data:last-child .year:after{
+	display: none;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="resume-left">
+            <div class="resume-img">
+                <img src="../assignment/jam new.JPG" alt="resumepic">           
+            </div>
+            <div class="resume-bottom">
+                <div class="resume-item resume_profile">
+                    <div class="resume-title">Profile</div>
+                    <div class="resume-info">A fast-learner and still has the eagerness to learn new stuff. Patient and flexible for any changes acquired from a long experience of working in a bpo industry. A team player and can work with less supervision.</div>
+                </div>
+                <div class="resume-item resume_address">
+                    <div class="resume-title">Address</div>
+                    <div class="resume-info">122 Calinga compound, Bayanan, Bacoor, Cavite                        
+                    </div>
+                </div>
+                <div class="resume-item resume_contact">
+                    <div class="resume-title">Contact</div>
+                    <div class="resume-info">
+                        <div class="resume-subtitle">Phone</div>
+                        <div class="resume-subinfo">+639206706357</div>
+                    </div>
+                    <div class="resume-info">
+                        <div class="resume-subtitle">Email</div>
+                        <div class="resume-subinfo">buangonmankouy1980@gmail.com</div>
+                    </div>
+                </div>
+                <div class="resume-item resume_skills">
+                    <div class="resume-title">Skills</div>
+                    <div class="resume-info"> 
+                        <div class="skills-list">
+                            <div class="skills-left">HTML</div>
+                            <div class="skills-bar">
+                                <p>
+                                    <span style="width: 90%"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-left">CSS</div>
+                            <div class="skills-bar">
+                                <p>
+                                    <span style="width: 80%"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-left">Javascript</div>
+                            <div class="skills-bar">
+                                <p>
+                                    <span style="width: 50%"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills_list">
+                            <div class="skills_left">Photoshop</div>
+                            <div class="skills_bar">
+                                <p>
+                                    <span style="width: 95%"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-right">
+            <div class="resume-item resume-namerole">
+                <div class="name"><strong>Ramil Endozo Jamila</strong></div>
+                <div class="role">Web Developer</div>
+            </div>
+            <div class="resume-item resume-education">
+                <div class="resume-title">Education</div>
+                <div class="resume-info">
+                    <div class="resume-data">
+                        <div class="year">November 7, 2022 - Present</div>
+                        <div class="content">
+                            <p><strong>Web Development</strong></p>
+                            <p>Kodego</p>
+                        </div>
+                    </div>
+                    <div class="resume-data">
+                        <div class="year">June 1997 - March 2004</div>
+                        <div class="content">
+                            <p><strong>Bachelor of Science in Marine Transportation</strong></p>
+                            <p>Bohol Institute of Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="resume-item resume-experience">
+                <div class="resume-title">Experience</div>
+                <div class="resume-info">
+                    <div class="resume-data">
+                        <div class="year">August 28, 2022 - Present</div>
+                        <div class="content">
+                            <p><strong>Sales Representative</strong></p>
+                            <p>EXL Philippines</p>
+                        </div>
+                    </div>
+                    <div class="resume-data">
+                        <div class="year">February 8, 2021 - May 15, 2021</div>
+                        <div class="content">
+                            <p><strong>Customer Service Representative</strong></p>
+                            <p>Eperformax</p>
+                        </div>
+                    </div>
+                    <div class="resume-data">
+                        <div class="year">October 2, 2022 - December 28, 2020</div>
+                        <div class="content">
+                            <p><strong>Customer Service Expert</strong></p>
+                            <p>Asurion/Techlog Philippines</p>
+                        </div>
+                    </div>
+                    <div class="resume-data">
+                        <div class="year">June 14, 2016 - April 3, 2018</div>
+                        <div class="content">
+                            <p><strong>CSR II / TSR / Email and Chat Support</strong></p>
+                            <p>Lancer Sales and Solutions</p>
+                        </div>
+                    </div>
+                    <div class="resume-data">
+                            <div class="year">August 5, 2015 - February 3, 2016</div>
+                            <div class="content">
+                                <p><strong>Chat / Email Support Representative II</strong></p>
+                                <p>Telus Philippines</p>
+                            </div>
+                    </div>
+                </div>                       
+            </div>
+            <div class="resume-item resume-interests">
+                <div class="resume-title">Interests</div>
+                <div class="resume-info">
+                    <div class="interests">
+                        
+                        <div class="int-data">
+                            Movies
+                        </div>
+                    </div>
+                    <div class="interests">
+                        
+                        <div class="int-data">
+                            Listening to music
+                        </div>
+                    </div>
+                    <div class="interests">
+                        
+                        <div class="int-data">
+                            Browsing the internet
+                        </div>
+                    </div>
+                    <div class="interests">
+                        
+                        <div class="int-data">
+                            Reading
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div> 
+         
+    </div>
+    
+</body>
+</html>

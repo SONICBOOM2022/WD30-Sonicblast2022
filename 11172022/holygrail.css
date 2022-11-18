@@ -1,17 +1,16 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+    box-sizing: border-box;    
 }
 header, footer {
-    height: 100px;
+    /* vh-viewport height */
+    /* vw-viewport width */
+    height: 10vh;
     padding: 10px;
     background-color: red;
 }
 main {
     display: flex;
-    height: 500px;
+    height: 80vh;
 }
 nav {
     background-color: orange;  
@@ -27,4 +26,7 @@ aside {
     background-color: green;  
     width: 20%;
     padding: 10px; 
+}
+body {
+    margin: 0;
 }

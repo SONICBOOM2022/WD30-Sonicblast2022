@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout with Forms</title>
+    <link rel="stylesheet" href="./holygrailflex.css">
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <article>
+            <form>
+                <div class="container">
+                    <div class="flex-item left">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="pickupdatetime">Pickup Date/Time</label>
+                            <input type="datetime-local" name="date">                            
+                        </div>
+                        <div class="field">
+                            <label for="dropdown">Pickup Place</label>
+                            <select name="dropdown" id="dropdown">
+                                <option>Please select</option>
+                                <option value="smmoa">SM MOA</option>
+                                <option value="smbacoor">SM Bacoor</option>
+                                <option value="smmolino">SM Molino</option>
+                                <option value="smdasma">SM Dasmariñas</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="dropoffplace">Dropoff Place</label>
+                            <input 
+                                type="text"
+                                id="dropoffplace"
+                                name="dropplace"/>   
+                        </div>
+                    </div>
+                    <div class="flex-item right">
+                        <div class="preferences">Which vehicle do you require?
+                            <div class="select">
+                                <input type="radio" name="vehicle" id="van">
+                                <label for="van">Van</label>
+                            </div>
+                            <div class="select">
+                                <input type="radio" name="vehicle" id="jeepney">
+                                <label for="jeepney">Jeepney</label>
+                            </div>
+                            <div class="select">
+                                <input type="radio" name="vehicle" id="tricycle">
+                                <label for="tricycle">Tricycle</label>
+                            </div>
+                        </div>
+                        <div class="preferences">Extras                    
+                            <div class="select">
+                                <input type="checkbox" name="prof" id="babyseat">
+                                <label for="babyseat">Baby Seat</label>
+                            </div>
+                            <div class="select">
+                                <input type="checkbox" name="prof" id="wheelchairaccess">
+                                <label for="wheelchairaccess">Wheelchair Access</label>
+                            </div>
+                            <div class="select">
+                                <input type="checkbox" name="prof" id="stocktip">
+                                <label for="stocktip">Stock Tip</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" value="Submit Booking">
+                </div>
+            </form>
+        </article>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+    </main>
+    <footer>Footer</footer>
+    
+    
+</body>
+</html>

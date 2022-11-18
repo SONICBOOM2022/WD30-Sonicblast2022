@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;    
+}
+header, footer {
+    height: 15vh;
+    background-color: olivedrab;
+    padding: 15px;
+}
+main {
+    height: 70vh;
+    display: flex;
+}
+nav {
+    width: 20%;
+    padding: 15px;
+    background-color: lightblue;
+}
+aside {
+    width: 20%;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+article {
+    width: 60%;
+    padding: 15px;
+    margin: 20px 10px 80px 10px;
+    background-color: white;
+}
+.container {    
+    display: flex;    
+    column-gap: 30px;      
+}
+.flex-item.left {
+    width: 60%;       
+}
+.field {
+    display: flex;
+    align-items: center;
+    margin: 20px;    
+}
+.field input,select {
+    flex: 1;
+    padding: 5px;
+    margin: 0 0 0 10px;
+}
+.flex-item.right {
+    width: 30%;
+    flex: 1;
+    margin: 20px;    
+}
+.preferences {
+    padding: 0 0 20px 0;
+}
+.select {
+    padding: 5px 0 5px 0;
+}
+.btn-container {
+    text-align: center;
+    margin-top: 20px;      
+}
+[type="submit"] { 
+    color: white;   
+    border: 0;
+    padding: 10px;
+    background-color: grey; 
+       
+}
+input[type="submit"]:hover {
+    cursor: pointer;   
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 20px;
+    height: 100%;
+    background: antiquewhite;
+}

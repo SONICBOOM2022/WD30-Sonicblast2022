@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Activity</title>    
+    <style>
+        * {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;   
+}
+body {
+    margin: 0;
+    padding: 5px;
+}
+header {
+    display: grid;    
+    width: 100%;    
+    background-color: rgb(112, 224, 131);
+    justify-content: center;   
+    font-size: 70px;
+    font-weight: 1000;
+    padding: 40px;          
+}
+nav {
+    width: 100%;    
+    text-align: left;
+    background: rgb(51, 50, 50); 
+}
+nav ul {
+    display: inline-flex;    
+}
+nav ul li {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: white;
+}
+article {
+    width: 100%;    
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.art {
+    padding: 2em;    
+    border: 1px solid rgb(112, 224, 131);    
+}
+article.art p {
+    margin-bottom: 0;
+}
+article.art h2 {
+    position: relative;
+}
+footer {
+    background-color: rgb(51, 50, 50);
+    width: 100%;
+    height: 100px;       
+    border: 2px solid rgb(51, 50, 50);
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <span>Online Magazine</span>
+        </div>
+    </header>
+    <nav>
+        <ul>            
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="aboutUs">About Us</a></li>
+            <li><a href="#" id="contactUs">Contact Us</a></li>            
+        </ul>        
+    </nav>
+
+    <article>
+        <div class="art">
+            <h2>Lifestyle</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit.</p>
+        </div>
+        <div class="art">
+            <h2>Business</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit.</p>
+        </div>
+        <div class="art">
+            <h2>Sports</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit.</p>
+        </div>
+    </article>
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+nav {
+  padding: 20px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.message {
+  font-size: 24px;
+  font-family: "Impact";
+  font-weight: 500;
+  color: #464a96;
+}
+
+.sample {
+  font-size: 32px;
+  font-family: Arial;
+  font-weight: 800;
+  color: lightblue;
+}
+
+.warning {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

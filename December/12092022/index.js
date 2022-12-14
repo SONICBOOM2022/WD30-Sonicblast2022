@@ -47,8 +47,8 @@ let count = 10;
 console.log(count++); // Postfix increment
 console.log(++count); // Prefix increment
 // Decrement --
-console.log(count--); // Postfix increment
-console.log(--count); // Prefix increment
+console.log(count--); // Postfix decrement
+console.log(--count); // Prefix decrement
 
 // count -= 1;
 // console.log(count);

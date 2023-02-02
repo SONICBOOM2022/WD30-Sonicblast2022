@@ -1,11 +1,11 @@
+import React from 'react';
 
-
-function Footer() {
-    return(
-        <div className="footer-main">
-            This is the footer
-        </div>
-    ) 
-}
+const Footer = () => {
+  return (
+    <footer>
+      <p>Copyright &copy; {new Date().getFullYear()} Your Company</p>
+    </footer>
+  );
+};
 
 export default Footer;

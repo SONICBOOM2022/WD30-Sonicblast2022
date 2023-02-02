@@ -1,27 +1,147 @@
-import Count from '../Count'
-import Login from './Login'
+import React, { useState } from "react";
+import Images1 from "../images/1.jpeg";
+import Images2 from "../images/2.jpeg";
+import Images3 from "../images/3.jpeg";
+import Images4 from "../images/4.jpg";
+import Images5 from "../images/5.jpg";
+import Images6 from "../images/6.jpg";
+import Images7 from "../images/9.jpg";
+import Images8 from "../images/8.jpg";
+import Images9 from "../images/10.jpg";
+import Images10 from "../images/11.jpg";
+import Images11 from "../images/12.jpg";
+import Images12 from "../images/13.jpg";
+import Images13 from "../images/14.jpg";
+import { Carousel } from "react-bootstrap";
 
 function Main() {
-    return(
-        <div className="main-body">
-            <div className='row'>
-                <div className='col-8'>
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLSOKjYhb3md0cz3to10f5KR0mHhC7EM_hb2TNFJjniJrl3bMZUy1BaQvbWlAxe6XCtbvLQIK0oyc3wDCrSZ2Kf63dpuSOrtqMfrGQEQqpB-yCBnVAde1WizLPBBL_eylka9ZLUsZRLBF3eyBCZiVDXylqDm4L-HWHMuEIi9eaQ1RortQDmCbFcjrn/s780/Shipping%20Container%20Home%20on%20Steep%20Slope,%20Marin,%20California%200.jpg" width="1020"/>
-                </div>
-                <div className='col-4 bg-light'>
-                    <div className='row'>
-                        <div className='col-6'>
-                            <Login />
-                        </div>
-                        <div className='col-6 bg-danger p-0'>
-                            <img src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?w=2000" alt='image' height='100%' width='100%' className='img-responsive'></img>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    ) 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
+      <Carousel.Item>
+        <img className="d-block" src={Images1} alt="Crispin" />
+        <Carousel.Caption>
+          <h1 className="text-black fs-1">Crispin</h1>
+          <h3 className="text-black">
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images2} alt="Basilio" />
+        <Carousel.Caption>
+          <h1 className="text-black">Basilio</h1>
+          <h3 className="text-black">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images3} alt="Sisa" />
+        <Carousel.Caption>
+          <h1 className="text-white">Sisa</h1>
+          <h3>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images4} alt="Damaso" />
+        <Carousel.Caption>
+          <h1 className="text-black">Damaso</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images5} alt="Clara" />
+        <Carousel.Caption>
+          <h1 className="text-black">Clara</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images6} alt="Ibarra" />
+        <Carousel.Caption>
+          <h1 className="text-black">Ibarra</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images7} alt="Elias" />
+        <Carousel.Caption>
+          <h1 className="text-black">Elias</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images8} alt="Isabel" />
+        <Carousel.Caption>
+          <h1 className="text-black">Isabel</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images9} alt="maria" />
+        <Carousel.Caption>
+          <h1 className="text-black">Maria</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images10} alt="quatrokantos" />
+        <Carousel.Caption>
+          <h1 className="text-black">quatrokantos</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images11} alt="alfonso" />
+        <Carousel.Caption>
+          <h1 className="text-black">Alfonso</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images12} alt="malasado" />
+        <Carousel.Caption>
+          <h1 className="text-black">Malasado</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block" src={Images13} alt="florante" />
+        <Carousel.Caption>
+          <h1 className="text-black">Florante</h1>
+          <h3 className="text-black">
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
+  );
 }
 
 export default Main;

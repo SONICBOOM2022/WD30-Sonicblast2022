@@ -5,8 +5,8 @@ function Main() {
     return(
         <div className="main-body">
             <div className='row'>
-                <div className='col-8 bg-dark'>
-                    {/* Main content body */}
+                <div className='col-8'>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLSOKjYhb3md0cz3to10f5KR0mHhC7EM_hb2TNFJjniJrl3bMZUy1BaQvbWlAxe6XCtbvLQIK0oyc3wDCrSZ2Kf63dpuSOrtqMfrGQEQqpB-yCBnVAde1WizLPBBL_eylka9ZLUsZRLBF3eyBCZiVDXylqDm4L-HWHMuEIi9eaQ1RortQDmCbFcjrn/s780/Shipping%20Container%20Home%20on%20Steep%20Slope,%20Marin,%20California%200.jpg" width="1020"/>
                 </div>
                 <div className='col-4 bg-light'>
                     <div className='row'>

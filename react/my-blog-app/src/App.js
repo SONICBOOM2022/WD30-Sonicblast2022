@@ -5,6 +5,7 @@ import './css/landing.css'
 import { Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return(

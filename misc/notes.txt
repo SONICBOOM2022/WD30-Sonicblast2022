@@ -2,10 +2,16 @@ npm install react-bootstrap bootstrap
 bootstrap cdn in index.html (no need to download bootstrap if gonna use class based)
 npm install react-router-dom
 
+npm create vite@latest - fewer dependencies
+npm run dev
 
 
 Creating a folder:
 npx create-react-app (folder name)
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

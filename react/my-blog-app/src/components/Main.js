@@ -26,7 +26,7 @@ function Main() {
         <img className="d-block" src={Images1} alt="Crispin" />
         <Carousel.Caption>
           <h1 className="text-black fs-1">Crispin</h1>
-          <h3 className="text-black">
+          <h3 className="text-white">
             Nulla vitae elit libero, a pharetra augue mollis interdum.
           </h3>
         </Carousel.Caption>
@@ -97,7 +97,7 @@ function Main() {
       <Carousel.Item>
         <img className="d-block" src={Images9} alt="maria" />
         <Carousel.Caption>
-          <h1 className="text-black">Maria</h1>
+          <h1 className="text-white">Maria</h1>
           <h3 className="text-black">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </h3>
@@ -106,7 +106,7 @@ function Main() {
       <Carousel.Item>
         <img className="d-block" src={Images10} alt="quatrokantos" />
         <Carousel.Caption>
-          <h1 className="text-black">quatrokantos</h1>
+          <h1 className="text-black">Quatrokantos</h1>
           <h3 className="text-black">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </h3>
@@ -115,8 +115,8 @@ function Main() {
       <Carousel.Item>
         <img className="d-block" src={Images11} alt="alfonso" />
         <Carousel.Caption>
-          <h1 className="text-black">Alfonso</h1>
-          <h3 className="text-black">
+          <h1 className="text-white">Alfonso</h1>
+          <h3 className="text-white">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </h3>
         </Carousel.Caption>
@@ -124,8 +124,8 @@ function Main() {
       <Carousel.Item>
         <img className="d-block" src={Images12} alt="malasado" />
         <Carousel.Caption>
-          <h1 className="text-black">Malasado</h1>
-          <h3 className="text-black">
+          <h1 className="text-white">Malasado</h1>
+          <h3 className="text-white">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </h3>
         </Carousel.Caption>
@@ -133,8 +133,8 @@ function Main() {
       <Carousel.Item>
         <img className="d-block" src={Images13} alt="florante" />
         <Carousel.Caption>
-          <h1 className="text-black">Florante</h1>
-          <h3 className="text-black">
+          <h1 className="text-white">Florante</h1>
+          <h3 className="text-white">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </h3>
         </Carousel.Caption>

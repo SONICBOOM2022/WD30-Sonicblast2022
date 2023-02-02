@@ -1,0 +1,15 @@
+npm install react-bootstrap bootstrap
+bootstrap cdn in index.html (no need to download bootstrap if gonna use class based)
+npm install react-router-dom
+
+
+
+Creating a folder:
+npx create-react-app (folder name)
+
+
+
+Classrooms:
+https://us06web.zoom.us/j/83721604884
+
+https://us06web.zoom.us/j/81104181483

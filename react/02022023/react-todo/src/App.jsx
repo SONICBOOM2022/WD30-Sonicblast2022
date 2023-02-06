@@ -46,15 +46,15 @@ function App() {
         value={input}
         placeholder="Add todo"
       />
-      <button onClick={() => addTodo()}>Submit</button>
+      <button className="btn1" onClick={() => addTodo()}>Submit</button>
       <hr />
       <ul>
         {todos.map((todo) => {
           return (
             <li key={todo.id} style={{textDecoration: todo.status ? 'line-through' : ''}}>
               {todo.value}
-              <button onClick={() => deleteTodo(todo.id)}>❌</button>
-              <button onClick={() => doneTodo(todo.id)}>✔️</button>
+              <button className="btn2" onClick={() => deleteTodo(todo.id)}>❌</button>
+              <button className="btn2" onClick={() => doneTodo(todo.id)}>✔️</button>
             </li>
           );
         })}

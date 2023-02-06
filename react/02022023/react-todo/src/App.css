@@ -2,13 +2,38 @@ body {
   margin: 0;
   padding: 0;  
   place-items: center;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-kitchen-ideas-hbx100119koty-015-copy-1652215842.png?crop=1xw:1xh;center,top&resize=480:*);
+  
+}
+hr {
+  color: black;
 }
 .App {
-  margin: 0rem 30rem 0 30rem;
+  margin: 0rem 35rem 0 35rem;
   padding: 1rem;
   width: 30rem;
   height: 30rem;
   border: 1px solid black;
   border-radius: 1em;
+  color: white;
+  background: rgba(128, 128, 128, 0.938);
+}
+input {
+  margin-left: 1rem;
+  width: 19em;
+  
+}
+.btn1 {
+  background: red;
+  margin-left: 1rem;  
+  color: white;
+  border: 2px solid black;
+}
+.btn1:hover {
+  background: white;
+  border: 2px solid black;
   color: black;
+}
+.btn2 {
+  background: none;
 }

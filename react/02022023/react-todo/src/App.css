@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;  
+  place-items: center;
+}
+.App {
+  margin: 0rem 30rem 0 30rem;
+  padding: 1rem;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  border-radius: 1em;
+  color: black;
+}

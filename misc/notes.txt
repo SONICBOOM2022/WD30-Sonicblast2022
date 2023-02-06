@@ -6,11 +6,15 @@ npm create vite@latest - fewer dependencies
 npm run dev
 
 
+SASS
+npm install sass
+
 Creating a folder:
 npx create-react-app (folder name)
 
 
 
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,3 +23,13 @@ Classrooms:
 https://us06web.zoom.us/j/83721604884
 
 https://us06web.zoom.us/j/81104181483
+
+
+htmlFor - used in jsx
+
+PRIO process in jsx
+index.html
+main.jsx
+
+
+Reactjs code snippets

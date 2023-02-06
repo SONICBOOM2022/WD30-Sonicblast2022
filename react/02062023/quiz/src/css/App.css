@@ -1,0 +1,20 @@
+body {
+  margin: auto;
+  padding-top: 13em;
+  display: grid;
+  place-items: center;
+  background: black;
+  
+  
+}
+.app {
+  padding: 1em;
+  display: grid;
+  place-items: center;
+   width: auto;
+   border: 1px solid white;
+   border-radius: 1em;
+   font-size: 50px;
+   color: white;
+}
+

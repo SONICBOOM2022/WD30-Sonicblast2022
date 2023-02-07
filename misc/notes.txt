@@ -33,3 +33,14 @@ main.jsx
 
 
 Reactjs code snippets
+
+KENN
+https://github.com/Kenzhie16/shopping-list
+https://www.freecodecamp.org/news/how-to-build-a-shopping-list-using-react-hooks-w-starter-code-and-video-walkthrough/
+npm install --save @fortawesome/react-fontawesome
+npm install --save @fortawesome/free-solid-svg-icons
+
+
+
+MARK
+https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries

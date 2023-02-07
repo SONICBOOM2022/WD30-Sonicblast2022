@@ -64,13 +64,13 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="./pages/OurProjects" className="nav-link text-light">
+                <Link to="/OurProjects" className="nav-link text-light">
                   Our Projects
                 </Link>
               </li>
               
               <li className="nav-item">
-                <Link to="../pages/ContactUs" className="nav-link text-light">Contact Us</Link>
+                <Link to="/ContactUs" className="nav-link text-light">Contact Us</Link>
               </li>
             </ul>
             

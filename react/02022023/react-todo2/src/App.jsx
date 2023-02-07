@@ -1,66 +1,104 @@
-import "./App.css";
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import './index.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 
+const App = () => {
+	// HINT: each "item" in our list names a name,
+	// a boolean to tell if its been completed, and a quantity
+	const [items, setItems] = useState([
+	]);
 
-function App() {
-  // handle Textbox value
-  const [input, setInput] = useState("");
-  // prepare todos handler array
-  const [todos, setTodos] = useState([]);
+	const [inputValue, setInputValue] = useState('');
+	const [totalItemCount, setTotalItemCount] = useState(0);
 
-  // handle submit click
-  function addTodo() {
-    const item = {
-      id: Math.floor(Math.random() * 1000),
-      value: input,
-      status: false,
-    };
+	const handleAddButtonClick = () => {
+		const newItem = {
+			itemName: inputValue,
+			quantity: 0,
+			isSelected: false,
+		};
 
-    setTodos((oldTodos) => [...oldTodos, item]);
-    setInput("");
-  }
-  // handle delete todo
-  function deleteTodo(id) {
-    const newTodoList = todos.filter((todo) => todo.id !== id);
-    setTodos(newTodoList);
-  
-  }
-  // mark todo as done
-  function doneTodo(id) {
-    const todoIndex = todos.findIndex(todo => todo.id == id)
+		const newItems = [...items, newItem];
 
+		setItems(newItems);
+		setInputValue('');
+		calculateTotal();
+	};
 
-  // todos{todoIndex}.status = true
-    const tmpTodos = [...todos]
-    tmpTodos[todoIndex].status = true
-    setTodos(tmpTodos)
-    console.log(todos);
-    
-  }
-  
-  
-  return (
-    <div className="App">
-      <input
-        onChange={(e) => setInput(e.target.value)}
-        value={input}
-        placeholder="Add todo"
-      />
-      <button onClick={() => addTodo()}>Submit</button>
-      <hr />
-      <ul>
-        {todos.map((todo) => {
-          return (
-            <li key={todo.id} style={{textDecoration: todo.status ? 'line-through' : ''}}>
-              {todo.value}
-              <button onClick={() => deleteTodo(todo.id)}>❌</button>
-              <button onClick={() => doneTodo(todo.id)}>✔️</button>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-}
+	const handleQuantityIncrease = (index) => {
+		const newItems = [...items];
+
+		newItems[index].quantity++;
+
+		setItems(newItems);
+		calculateTotal();
+	};
+
+	const handleQuantityDecrease = (index) => {
+		const newItems = [...items];
+
+		newItems[index].quantity--;
+
+		setItems(newItems);
+		calculateTotal();
+	};
+
+	const toggleComplete = (index) => {
+		const newItems = [...items];
+
+		newItems[index].isSelected = !newItems[index].isSelected;
+
+		setItems(newItems);
+	};
+
+	const calculateTotal = () => {
+		const totalItemCount = items.reduce((total, item) => {
+			return total + item.quantity;
+		}, 0);
+
+		setTotalItemCount(totalItemCount);
+	};
+
+	return (
+		<div className='app-background'>
+			<div className='main-container'>
+				<div className='add-item-box'>
+					<input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
+					<FontAwesomeIcon icon={faPlus} onClick={() => handleAddButtonClick()} />
+				</div>
+				<div className='item-list'>
+					{items.map((item, index) => (
+						<div className='item-container'>
+							<div className='item-name' onClick={() => toggleComplete(index)}>
+								{item.isSelected ? (
+									<>
+										<FontAwesomeIcon icon={faCheckCircle} />
+										<span className='completed'>{item.itemName}</span>
+									</>
+								) : (
+									<>
+										<FontAwesomeIcon icon={faCircle} />
+										<span>{item.itemName}</span>
+									</>
+								)}
+							</div>
+							<div className='quantity'>
+								<button>
+									<FontAwesomeIcon icon={faChevronLeft} onClick={() => handleQuantityDecrease(index)} />
+								</button>
+								<span> {item.quantity} </span>
+								<button>
+									<FontAwesomeIcon icon={faChevronRight} onClick={() => handleQuantityIncrease(index)} />
+								</button>
+							</div>
+						</div>
+					))}
+				</div>
+				<div className='total'>Total: {totalItemCount}</div>
+			</div>
+		</div>
+	);
+};
 
 export default App;

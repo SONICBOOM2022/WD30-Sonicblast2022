@@ -4,9 +4,9 @@ import Footer from "../src/components/Footer";
 import { Routes, Route, Link} from "react-router-dom";
 import StandardModels from "../src/pages/StandardModels";
 import CustomBuilds from "../src/pages/CustomBuilds";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "../src/pages/AboutUs";
 import OurProjects from "../src/pages/OurProjects";
-import ContactUs from "./pages/ContactUs";
+import ContactUs from "../src/pages/ContactUs";
 
 function App() {
   return (

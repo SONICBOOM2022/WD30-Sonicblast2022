@@ -2,7 +2,57 @@
 <html>
 <head>
 	<title>Calculator</title>
-	<link rel="stylesheet" type="text/css" href="ecalculator2.css">
+	<style>
+		body {
+	background-color: black;
+	font-family: sans-serif;
+}
+
+.calculator {
+	background-color: red;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 50px auto;
+	max-width: 300px;
+}
+
+.display {
+	background-color: gainsboro;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.display input[type="text"] {
+	border: none;
+	background-color: transparent;
+	width: 100%;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.buttons {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+button:hover {
+	background-color: violet;
+}
+
+	</style>
 </head>
 <body>
 	<div class="calculator">
@@ -32,6 +82,25 @@
 			<button onclick="insertValue('+')">+</button>
 		</div>
 	</div>
-	<script src="ecalculator2.js"></script>
+	<script>
+		let display = document.getElementById("result");
+
+function insertValue(value) {
+	if (value === "=") {
+		display.value = eval(display.value);
+	} else {
+		display.value += value;
+	}
+}
+
+function clearDisplay() {
+	display.value = "";
+}
+
+function backspace() {
+	display.value = display.value.slice(0, -1);
+}
+
+	</script>
 </body>
 </html>

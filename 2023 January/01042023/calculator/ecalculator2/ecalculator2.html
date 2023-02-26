@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		body {
+	background-color: black;
+	font-family: sans-serif;
+}
+
+.calculator {
+	background-color: red;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 50px auto;
+	max-width: 300px;
+}
+
+.display {
+	background-color: gainsboro;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.display input[type="text"] {
+	border: none;
+	background-color: transparent;
+	width: 100%;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.buttons {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+button:hover {
+	background-color: violet;
+}
+
+	</style>
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="buttons">
+			<button onclick="clearDisplay()">C</button>
+			<button onclick="backspace()">←</button>
+			<button onclick="insertValue('(')">(</button>
+			<button onclick="insertValue(')')">)</button>
+			<button onclick="insertValue('7')">7</button>
+			<button onclick="insertValue('8')">8</button>
+			<button onclick="insertValue('9')">9</button>
+			<button onclick="insertValue('/')">÷</button>
+			<button onclick="insertValue('4')">4</button>
+			<button onclick="insertValue('5')">5</button>
+			<button onclick="insertValue('6')">6</button>
+			<button onclick="insertValue('*')">×</button>
+			<button onclick="insertValue('1')">1</button>
+			<button onclick="insertValue('2')">2</button>
+			<button onclick="insertValue('3')">3</button>
+			<button onclick="insertValue('-')">-</button>
+			<button onclick="insertValue('.')">.</button>
+			<button onclick="insertValue('0')">0</button>
+			<button onclick="insertValue('=')">=</button>
+			<button onclick="insertValue('+')">+</button>
+		</div>
+	</div>
+	<script>
+		let display = document.getElementById("result");
+
+function insertValue(value) {
+	if (value === "=") {
+		display.value = eval(display.value);
+	} else {
+		display.value += value;
+	}
+}
+
+function clearDisplay() {
+	display.value = "";
+}
+
+function backspace() {
+	display.value = display.value.slice(0, -1);
+}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./portfolio.css" />
+		<title>Ramil Jamila</title>
+	</head>
+	<body>
+		<div class="header">
+			<!-- <img src="./background.jpg" class="backimg"/> -->
+			<nav id="navbar">
+				<!-- <input type="checkbox" id="check" />
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label> -->
+				<a class="logo" href="">rj</a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul id="menu">
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<main>
+			<div class="section" id="main">
+				<h1>Hello</h1>
+				<h1>I'm Ramil Jamila</h1>
+			</div>
+			<div class="section" id="about">
+				<h2>About</h2>
+			</div>
+			<div class="section" id="projects">
+				<h2>Projects</h2>
+			</div>
+			<div class="section" id="contact">
+				<h2>Contact Me</h2>
+				<a href="" id="top">Back to top</a>
+			</div>
+			<a href="">Back to top</a>
+		</main>
+
+		<!-- <script
+			src="https://kit.fontawesome.com/yourcode.js"
+			crossorigin="anonymous"
+		></script> -->
+		<script>
+			const navbar = document.getElementById("navbar");
+			const menu = document.getElementById("menu");
+
+			window.onscroll = function () {
+				if (window.pageYOffset >= menu.offsetTop) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			};
+		</script>
+	</body>
+</html>

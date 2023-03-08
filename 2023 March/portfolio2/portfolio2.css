@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto Mono", monospace;
+	
+	
+}
+body {
+	background-color: #F39237;
+}
+html {
+	scroll-behavior: smooth;
+}
+/* NAVBAR START */
+.logo {
+	font-family: "Gajraj One", cursive;
+	font-style: italic;
+	color: cyan;
+	font-size: 50px;	
+	cursor: pointer;
+	width: 10rem;
+	text-decoration: none;	
+}
+.logo:hover {
+	color: #F39237;
+}
+#header {
+	background: #433E3F;
+}
+.navbar-nav {
+	gap: 20px;
+}
+
+.nav-item .nav-link {
+	color: white;
+	font-size: 17px;
+	font-weight: normal;
+	letter-spacing: 4px;           
+}
+
+
+.nav-item a:hover {
+	border-bottom: 1px solid #F39237;
+	border-top: 1px solid #F39237;;	
+	transition: 0.0s;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+	box-shadow: none;
+}
+
+.navbar-toggler {
+	border-color: transparent;
+}
+
+button {
+	width: 140px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid #ffd181;
+	background: transparent;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100000;
+}
+
+#header.sticky {
+	background: #433E3F;
+}
+
+@media only screen and (max-width: 991px) {
+	#header {
+		background: #433E3F;
+	}
+}
+
+
+
+/* NAVBAR END */
+/* MAIN START */
+.section {
+    
+    height: 88vh;
+    margin: 0;
+    scroll-margin-top: 6em;
+    
+}
+#main {
+    background-color: #F39237;
+    height: 88vh;
+    margin: 10rem 0 0 5rem;
+    scroll-margin-top: 6em;
+	font-size: 60px;
+}
+#submain {
+	color: cyan;
+	margin-left: 10rem;
+	
+}
+#mainsub {
+	margin-left: 15rem;
+}
+#about { 
+    background-color: #F39237; 
+}
+#projects { 
+    background-color: #F39237; 
+}
+#contact { 
+    background-color: #F39237; 
+}
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* MAIN END */
+
